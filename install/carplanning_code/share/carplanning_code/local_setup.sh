@@ -1,0 +1,1 @@
+/home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code/ament_cmake_environment_hooks/local_setup.sh

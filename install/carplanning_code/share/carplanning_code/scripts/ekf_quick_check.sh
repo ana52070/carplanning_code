@@ -1,0 +1,1 @@
+/home/ubuntu/ros2_ws/workspace/carplanning_code/src/scripts/ekf_quick_check.sh

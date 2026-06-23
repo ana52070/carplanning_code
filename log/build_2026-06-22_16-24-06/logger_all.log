@@ -1,0 +1,132 @@
+[0.189s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.190s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x70438a71d330>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70438a8e5a20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70438a8e5a20>>)
+[0.525s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.525s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.525s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.525s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.525s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.525s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.525s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ubuntu/ros2_ws/workspace/carplanning_code'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.550s] DEBUG:colcon.colcon_core.package_identification:Package 'src' with type 'ros.ament_cmake' and name 'carplanning_code'
+[0.550s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.550s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.550s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.550s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.550s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.600s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.604s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/ubuntu/fastlio2_ws/install
+[0.605s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ubuntu/ros2_ws/workspace/carplanning_code/install
+[0.606s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ubuntu/ros2_ws/workspace/spatio_temporal/install
+[0.607s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ubuntu/ros2_ws/workspace/rtk_um982/install
+[0.607s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ubuntu/ros2_ws/workspace/myslam_car/install
+[0.608s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/ubuntu/ros2_ws/workspace/livox/install
+[0.609s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 324 installed packages in /opt/ros/humble
+[0.612s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'carplanning_code' build argument 'cmake_args' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'carplanning_code' build argument 'cmake_target' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'carplanning_code' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'carplanning_code' build argument 'cmake_clean_cache' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'carplanning_code' build argument 'cmake_clean_first' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'carplanning_code' build argument 'cmake_force_configure' from command line to 'False'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'carplanning_code' build argument 'ament_cmake_args' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'carplanning_code' build argument 'catkin_cmake_args' from command line to 'None'
+[0.681s] Level 5:colcon.colcon_core.verb:set package 'carplanning_code' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.681s] DEBUG:colcon.colcon_core.verb:Building package 'carplanning_code' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code', 'merge_install': False, 'path': '/home/ubuntu/ros2_ws/workspace/carplanning_code/src', 'symlink_install': True, 'test_result_base': None}
+[0.681s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.682s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.682s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ubuntu/ros2_ws/workspace/carplanning_code/src' with build type 'ament_cmake'
+[0.682s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ubuntu/ros2_ws/workspace/carplanning_code/src'
+[0.692s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.692s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.692s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.706s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/workspace/rtk_um982/install/um982_ros2_driver:/home/ubuntu/ros2_ws/workspace/myslam_car/install/myslam_car_driver:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/workspace/carplanning_code/src -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code
+[1.089s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/workspace/rtk_um982/install/um982_ros2_driver:/home/ubuntu/ros2_ws/workspace/myslam_car/install/myslam_car_driver:/opt/ros/humble /usr/bin/cmake /home/ubuntu/ros2_ws/workspace/carplanning_code/src -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code
+[1.091s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/workspace/rtk_um982/install/um982_ros2_driver:/home/ubuntu/ros2_ws/workspace/myslam_car/install/myslam_car_driver:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code -- -j4 -l4
+[1.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/workspace/rtk_um982/install/um982_ros2_driver:/home/ubuntu/ros2_ws/workspace/myslam_car/install/myslam_car_driver:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code -- -j4 -l4
+[1.147s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/workspace/rtk_um982/install/um982_ros2_driver:/home/ubuntu/ros2_ws/workspace/myslam_car/install/myslam_car_driver:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code
+[1.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carplanning_code)
+[1.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/ros2_ws/workspace/rtk_um982/install/um982_ros2_driver:/home/ubuntu/ros2_ws/workspace/myslam_car/install/myslam_car_driver:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/ros2_ws/workspace/carplanning_code/build/carplanning_code
+[1.475s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code' for CMake module files
+[1.476s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code' for CMake config files
+[1.476s] Level 1:colcon.colcon_core.shell:create_environment_hook('carplanning_code', 'cmake_prefix_path')
+[1.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/hook/cmake_prefix_path.ps1'
+[1.478s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/hook/cmake_prefix_path.dsv'
+[1.479s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/hook/cmake_prefix_path.sh'
+[1.480s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/bin'
+[1.480s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/lib/pkgconfig/carplanning_code.pc'
+[1.480s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/lib/python3.10/site-packages'
+[1.481s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/bin'
+[1.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.ps1'
+[1.483s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.dsv'
+[1.484s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.sh'
+[1.486s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.bash'
+[1.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.zsh'
+[1.492s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/colcon-core/packages/carplanning_code)
+[1.493s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(carplanning_code)
+[1.493s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code' for CMake module files
+[1.493s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code' for CMake config files
+[1.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('carplanning_code', 'cmake_prefix_path')
+[1.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/hook/cmake_prefix_path.ps1'
+[1.494s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/hook/cmake_prefix_path.dsv'
+[1.495s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/hook/cmake_prefix_path.sh'
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/bin'
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/lib/pkgconfig/carplanning_code.pc'
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/lib/python3.10/site-packages'
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/bin'
+[1.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.ps1'
+[1.498s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.dsv'
+[1.498s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.sh'
+[1.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.bash'
+[1.499s] INFO:colcon.colcon_core.shell:Creating package script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/carplanning_code/package.zsh'
+[1.500s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ubuntu/ros2_ws/workspace/carplanning_code/install/carplanning_code/share/colcon-core/packages/carplanning_code)
+[1.500s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.500s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.500s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.500s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.514s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.514s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.514s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.557s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.558s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/local_setup.ps1'
+[1.559s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/_local_setup_util_ps1.py'
+[1.561s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/setup.ps1'
+[1.564s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/local_setup.sh'
+[1.565s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/_local_setup_util_sh.py'
+[1.566s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/setup.sh'
+[1.571s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/local_setup.bash'
+[1.572s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/setup.bash'
+[1.573s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/local_setup.zsh'
+[1.576s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ubuntu/ros2_ws/workspace/carplanning_code/install/setup.zsh'

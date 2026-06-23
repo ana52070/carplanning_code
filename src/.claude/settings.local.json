@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(chmod +x *)",
+      "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/config/ekf.yaml'\\)\\); print\\('ekf.yaml OK'\\)\")",
+      "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/config/nav2_params.yaml'\\)\\); print\\('nav2_params.yaml OK'\\)\")",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/scripts/ekf_probe.py'\\).read\\(\\)\\); print\\('ekf_probe.py OK'\\)\")",
+      "Bash(python3 -c \"import ast; ast.parse\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/scripts/covariance_relay.py'\\).read\\(\\)\\); print\\('covariance_relay.py OK'\\)\")",
+      "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/config/navsat.yaml'\\)\\); print\\('navsat.yaml OK'\\)\")"
+    ]
+  }
+}

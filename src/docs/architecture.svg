@@ -1,0 +1,668 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2350" font-family="'Microsoft YaHei','PingFang SC','Noto Sans SC',sans-serif">
+  <defs>
+    <!-- 硬件侧渐变 -->
+    <linearGradient id="hwHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E65100;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FF9800;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hwSensor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF8E1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFECB3;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hwLoc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFF3E0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFE0B2;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hwCost" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBE9E7;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#FFCCBC;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hwNav" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCE4EC;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#F8BBD0;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="hwCtrl" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0F2F1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B2DFDB;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- 仿真侧渐变 -->
+    <linearGradient id="simHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0D47A1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1976D2;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="simSensor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8EAF6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#C5CAE9;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="simLoc" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E3F2FD;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#BBDEFB;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="simCost" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8EAF6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#C5CAE9;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="simNav" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#EDE7F6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#D1C4E9;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="simCtrl" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0F2F1;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#B2DFDB;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- TF渐变色 -->
+    <linearGradient id="tfGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4A148C;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7B1FA2;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- 箭头标记 -->
+    <marker id="arrowOrange" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 L2,4 Z" fill="#E65100"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 L2,4 Z" fill="#0D47A1"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 L2,4 Z" fill="#2E7D32"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 L2,4 Z" fill="#C62828"/>
+    </marker>
+    <marker id="arrowTeal" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 L2,4 Z" fill="#00695C"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 L2,4 Z" fill="#6A1B9A"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 L2,4 Z" fill="#546E7A"/>
+    </marker>
+
+    <!-- 阴影 -->
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="112%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2.5" flood-color="#00000030"/>
+    </filter>
+    <filter id="shadowLight" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0.5" dy="1" stdDeviation="1.5" flood-color="#00000020"/>
+    </filter>
+
+    <!-- Glow for topic labels -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ========== 背景 ========== -->
+  <rect width="1600" height="2350" fill="#FAFAFA"/>
+
+  <!-- ========== 总标题 ========== -->
+  <rect x="0" y="0" width="1600" height="70" fill="#263238"/>
+  <text x="800" y="30" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="300">ROS2 HUMBLE · CAMPUS AUTONOMOUS NAVIGATION</text>
+  <text x="800" y="55" text-anchor="middle" fill="#FFB74D" font-size="22" font-weight="bold">校园无图自主导航 —— 系统数据流架构图</text>
+
+  <!-- ========== 列标题 ========== -->
+  <!-- 硬件标题栏 -->
+  <rect x="30" y="85" width="740" height="40" rx="6" fill="url(#hwHeader)" filter="url(#shadow)"/>
+  <text x="400" y="111" text-anchor="middle" fill="#FFF" font-size="17" font-weight="bold">🔌 硬件分支 (hardware) — Jetson Xavier NX</text>
+
+  <!-- 仿真标题栏 -->
+  <rect x="830" y="85" width="740" height="40" rx="6" fill="url(#simHeader)" filter="url(#shadow)"/>
+  <text x="1200" y="111" text-anchor="middle" fill="#FFF" font-size="17" font-weight="bold">🖥️ 仿真分支 (simulation) — Gazebo + TurtleBot3</text>
+
+  <!-- ==================================================================================== -->
+  <!-- 硬件侧：第1层 —— 传感器层 -->
+  <!-- ==================================================================================== -->
+  <rect x="30" y="140" width="740" height="210" rx="8" fill="url(#hwSensor)" stroke="#FF9800" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="30" y="140" width="740" height="32" rx="8" fill="#FF9800"/>
+  <rect x="30" y="156" width="740" height="16" fill="#FF9800"/>
+  <text x="400" y="161" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">📡 传感器层 — 真实硬件驱动</text>
+
+  <!-- 硬件传感器盒子 -->
+  <rect x="55" y="185" width="210" height="80" rx="6" fill="#FFF" stroke="#E65100" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="160" y="207" text-anchor="middle" fill="#E65100" font-size="13" font-weight="bold">🛞 Livox Mid-360</text>
+  <text x="160" y="225" text-anchor="middle" fill="#555" font-size="10">3D 激光雷达 (半球 FOV)</text>
+  <rect x="80" y="235" width="160" height="20" rx="4" fill="#FFF3E0"/>
+  <text x="160" y="249" text-anchor="middle" fill="#E65100" font-size="9" font-weight="bold">→ /livox/lidar (PointCloud2)</text>
+
+  <rect x="285" y="185" width="210" height="80" rx="6" fill="#FFF" stroke="#E65100" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="390" y="207" text-anchor="middle" fill="#E65100" font-size="13" font-weight="bold">🛰️ UM982 双天线 RTK</text>
+  <text x="390" y="225" text-anchor="middle" fill="#555" font-size="10">厘米级 GPS 定位</text>
+  <rect x="310" y="235" width="160" height="20" rx="4" fill="#FFF3E0"/>
+  <text x="390" y="249" text-anchor="middle" fill="#E65100" font-size="9" font-weight="bold">→ /gps/fix (NavSatFix)</text>
+
+  <rect x="515" y="185" width="230" height="80" rx="6" fill="#FFF" stroke="#E65100" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="630" y="207" text-anchor="middle" fill="#E65100" font-size="13" font-weight="bold">🚗 Yahboomcar 四轮差速底盘</text>
+  <text x="630" y="225" text-anchor="middle" fill="#555" font-size="10">轮式里程计 + 内置 IMU</text>
+  <rect x="530" y="235" width="200" height="20" rx="4" fill="#FFF3E0"/>
+  <text x="630" y="249" text-anchor="middle" fill="#E65100" font-size="9" font-weight="bold">→ /odom + /imu/data_raw</text>
+
+  <!-- 硬件传感器参数标注 -->
+  <rect x="55" y="275" width="690" height="64" rx="5" fill="#FFF8E1" stroke="#FFCC80" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="70" y="293" fill="#BF360C" font-size="10" font-weight="bold">⚙ 驱动参数:</text>
+  <text x="70" y="309" fill="#555" font-size="9">Mid-360: xfer_format=0(PointCloud2), frame_id='livox_frame', publish_freq=10Hz | chassis: myslam_car_driver/driver_node</text>
+  <text x="70" y="325" fill="#555" font-size="9">RTK: um982_ros2_driver, 双天线航向 | 静态 TF: base_link→livox_frame (x=0.14, z=0.12)</text>
+
+  <!-- ==================================================================================== -->
+  <!-- 仿真侧：第1层 —— 传感器层 -->
+  <!-- ==================================================================================== -->
+  <rect x="830" y="140" width="740" height="210" rx="8" fill="url(#simSensor)" stroke="#1976D2" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="830" y="140" width="740" height="32" rx="8" fill="#1976D2"/>
+  <rect x="830" y="156" width="740" height="16" fill="#1976D2"/>
+  <text x="1200" y="161" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">📡 传感器层 — Gazebo 仿真插件</text>
+
+  <!-- 仿真传感器盒子 -->
+  <rect x="855" y="185" width="210" height="80" rx="6" fill="#FFF" stroke="#0D47A1" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="960" y="207" text-anchor="middle" fill="#0D47A1" font-size="13" font-weight="bold">📐 Gazebo LIDAR 插件</text>
+  <text x="960" y="225" text-anchor="middle" fill="#555" font-size="10">2D 激光扫描 (360 samples)</text>
+  <rect x="875" y="235" width="170" height="20" rx="4" fill="#E3F2FD"/>
+  <text x="960" y="249" text-anchor="middle" fill="#0D47A1" font-size="9" font-weight="bold">→ /scan (LaserScan, 5Hz)</text>
+
+  <rect x="1085" y="185" width="210" height="80" rx="6" fill="#FFF" stroke="#0D47A1" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="1190" y="207" text-anchor="middle" fill="#0D47A1" font-size="13" font-weight="bold">🛰️ Gazebo GPS 插件</text>
+  <text x="1190" y="225" text-anchor="middle" fill="#555" font-size="10">仿真 GPS (10Hz)</text>
+  <rect x="1105" y="235" width="170" height="20" rx="4" fill="#E3F2FD"/>
+  <text x="1190" y="249" text-anchor="middle" fill="#0D47A1" font-size="9" font-weight="bold">→ /gps/fix (NavSatFix)</text>
+
+  <rect x="1315" y="185" width="230" height="80" rx="6" fill="#FFF" stroke="#0D47A1" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="1430" y="207" text-anchor="middle" fill="#0D47A1" font-size="13" font-weight="bold">🤖 Gazebo DiffDrive 插件</text>
+  <text x="1430" y="225" text-anchor="middle" fill="#555" font-size="10">差速驱动 + 里程计发布</text>
+  <rect x="1330" y="235" width="200" height="20" rx="4" fill="#E3F2FD"/>
+  <text x="1430" y="249" text-anchor="middle" fill="#0D47A1" font-size="9" font-weight="bold">→ /odom + /joint_states</text>
+
+  <!-- 仿真参数标注 -->
+  <rect x="855" y="275" width="690" height="64" rx="5" fill="#E8EAF6" stroke="#9FA8DA" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="870" y="293" fill="#1A237E" font-size="10" font-weight="bold">⚙ SDF 模型参数:</text>
+  <text x="870" y="309" fill="#555" font-size="9">LIDAR: 5Hz, 360 samples, range=3.5m, noise=0.01 | IMU: 200Hz, gyro_noise=2e-4, accel_noise=1.7e-2</text>
+  <text x="870" y="325" fill="#555" font-size="9">GPS: 10Hz, lat=39.1° lon=117.2° (天津) | DiffDrive: wheel_separation=0.287m, wheel_diameter=0.066m</text>
+
+  <!-- ========== 第1层→第2层 数据流箭头 ========== -->
+  <!-- 硬件侧: 传感器→定位 -->
+  <line x1="160" y1="350" x2="250" y2="385" stroke="#E65100" stroke-width="2.5" marker-end="url(#arrowOrange)"/>
+  <line x1="390" y1="350" x2="370" y2="385" stroke="#E65100" stroke-width="2.5" marker-end="url(#arrowOrange)"/>
+  <line x1="630" y1="350" x2="550" y2="385" stroke="#E65100" stroke-width="2.5" marker-end="url(#arrowOrange)"/>
+  <!-- 仿真侧: 传感器→定位 -->
+  <line x1="960" y1="350" x2="1050" y2="385" stroke="#0D47A1" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+  <line x1="1190" y1="350" x2="1170" y2="385" stroke="#0D47A1" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+  <line x1="1430" y1="350" x2="1350" y2="385" stroke="#0D47A1" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+
+  <!-- ==================================================================================== -->
+  <!-- 硬件侧：第2层 —— 定位层 -->
+  <!-- ==================================================================================== -->
+  <rect x="30" y="390" width="740" height="200" rx="8" fill="url(#hwLoc)" stroke="#FF9800" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="30" y="390" width="740" height="32" rx="8" fill="#F57C00"/>
+  <rect x="30" y="406" width="740" height="16" fill="#F57C00"/>
+  <text x="400" y="411" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">🧭 定位层 — robot_localization 传感器融合</text>
+
+  <!-- EKF 节点 -->
+  <rect x="55" y="435" width="320" height="90" rx="6" fill="#FFF" stroke="#E65100" stroke-width="2" filter="url(#shadowLight)"/>
+  <text x="215" y="456" text-anchor="middle" fill="#E65100" font-size="12" font-weight="bold">ekf_filter_node (EKF)</text>
+  <text x="215" y="473" text-anchor="middle" fill="#555" font-size="9">频率: 20Hz | 2D模式 | 发布TF</text>
+  <line x1="70" y1="483" x2="360" y2="483" stroke="#EEE" stroke-width="1"/>
+  <text x="90" y="498" fill="#555" font-size="9">融合输入:</text>
+  <rect x="158" y="486" width="60" height="16" rx="3" fill="#FFF3E0"/>
+  <text x="188" y="498" text-anchor="middle" fill="#E65100" font-size="8">/odom</text>
+  <rect x="225" y="486" width="60" height="16" rx="3" fill="#FFF3E0"/>
+  <text x="255" y="498" text-anchor="middle" fill="#E65100" font-size="8">/imu/data_raw</text>
+  <rect x="292" y="486" width="70" height="16" rx="3" fill="#FFCC80"/>
+  <text x="327" y="498" text-anchor="middle" fill="#E65100" font-size="8">/odometry/gps</text>
+  <text x="90" y="516" fill="#555" font-size="9">输出: map→odom→base_footprint TF + /odometry/filtered</text>
+
+  <!-- navsat_transform 节点 -->
+  <rect x="395" y="435" width="350" height="90" rx="6" fill="#FFF" stroke="#E65100" stroke-width="2" filter="url(#shadowLight)"/>
+  <text x="570" y="456" text-anchor="middle" fill="#E65100" font-size="12" font-weight="bold">navsat_transform_node</text>
+  <text x="570" y="473" text-anchor="middle" fill="#555" font-size="9">频率: 10Hz | GPS→世界坐标转换</text>
+  <line x1="410" y1="483" x2="730" y2="483" stroke="#EEE" stroke-width="1"/>
+  <text x="430" y="498" fill="#555" font-size="9">输入: /gps/fix → 输出: /odometry/gps</text>
+  <text x="430" y="516" fill="#555" font-size="9">yaw_offset=π/2 | zero_altitude=true | broadcast_cartesian_transform=true</text>
+
+  <!-- EKF内部连线 -->
+  <line x1="375" y1="470" x2="395" y2="470" stroke="#F57C00" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowOrange)"/>
+  <text x="385" y="462" fill="#F57C00" font-size="7">GPS odom</text>
+
+  <!-- ==================================================================================== -->
+  <!-- 仿真侧：第2层 —— 定位层 -->
+  <!-- ==================================================================================== -->
+  <rect x="830" y="390" width="740" height="200" rx="8" fill="url(#simLoc)" stroke="#1976D2" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="830" y="390" width="740" height="32" rx="8" fill="#1565C0"/>
+  <rect x="830" y="406" width="740" height="16" fill="#1565C0"/>
+  <text x="1200" y="411" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">🧭 定位层 — robot_localization 传感器融合</text>
+
+  <!-- EKF 节点 (仿真) -->
+  <rect x="855" y="435" width="320" height="90" rx="6" fill="#FFF" stroke="#0D47A1" stroke-width="2" filter="url(#shadowLight)"/>
+  <text x="1015" y="456" text-anchor="middle" fill="#0D47A1" font-size="12" font-weight="bold">ekf_filter_node (EKF)</text>
+  <text x="1015" y="473" text-anchor="middle" fill="#555" font-size="9">频率: 20Hz | 2D模式 | use_sim_time: true</text>
+  <line x1="870" y1="483" x2="1160" y2="483" stroke="#EEE" stroke-width="1"/>
+  <text x="890" y="498" fill="#555" font-size="9">融合输入:</text>
+  <rect x="958" y="486" width="60" height="16" rx="3" fill="#E3F2FD"/>
+  <text x="988" y="498" text-anchor="middle" fill="#0D47A1" font-size="8">/odom</text>
+  <rect x="1025" y="486" width="60" height="16" rx="3" fill="#E3F2FD"/>
+  <text x="1055" y="498" text-anchor="middle" fill="#0D47A1" font-size="8">/imu/data</text>
+  <rect x="1092" y="486" width="70" height="16" rx="3" fill="#90CAF9"/>
+  <text x="1127" y="498" text-anchor="middle" fill="#0D47A1" font-size="8">/odometry/gps</text>
+  <text x="890" y="516" fill="#555" font-size="9">输出: map→odom→base_footprint TF (同硬件逻辑)</text>
+
+  <!-- navsat_transform 节点 (仿真) -->
+  <rect x="1195" y="435" width="350" height="90" rx="6" fill="#FFF" stroke="#0D47A1" stroke-width="2" filter="url(#shadowLight)"/>
+  <text x="1370" y="456" text-anchor="middle" fill="#0D47A1" font-size="12" font-weight="bold">navsat_transform_node</text>
+  <text x="1370" y="473" text-anchor="middle" fill="#555" font-size="9">频率: 10Hz | 参数与硬件相同</text>
+  <line x1="1210" y1="483" x2="1530" y2="483" stroke="#EEE" stroke-width="1"/>
+  <text x="1230" y="498" fill="#555" font-size="9">输入: /gps/fix → 输出: /odometry/gps</text>
+  <text x="1230" y="516" fill="#555" font-size="9">yaw_offset=π/2 | zero_altitude=true | broadcast_cartesian_transform=true</text>
+
+  <line x1="1175" y1="470" x2="1195" y2="470" stroke="#1565C0" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrowBlue)"/>
+
+  <!-- ========== 第2层→第3层 数据流箭头 ========== -->
+  <!-- 硬件侧: 定位→代价地图 -->
+  <text x="90" y="615" fill="#BF360C" font-size="9">TF + odom</text>
+  <line x1="150" y1="610" x2="250" y2="640" stroke="#E65100" stroke-width="2" marker-end="url(#arrowOrange)"/>
+  <!-- 仿真侧 -->
+  <text x="890" y="615" fill="#1A237E" font-size="9">TF + odom</text>
+  <line x1="950" y1="610" x2="1050" y2="640" stroke="#0D47A1" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- ==================================================================================== -->
+  <!-- 硬件侧：第3层 —— 代价地图层 (STVL 3D) -->
+  <!-- ==================================================================================== -->
+  <rect x="30" y="645" width="740" height="210" rx="8" fill="url(#hwCost)" stroke="#D84315" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="30" y="645" width="740" height="32" rx="8" fill="#D84315"/>
+  <rect x="30" y="661" width="740" height="16" fill="#D84315"/>
+  <text x="400" y="666" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">🗺️ 代价地图层 — STVL 3D 体素层 (硬件专属)</text>
+
+  <!-- STVL 核心 -->
+  <rect x="55" y="688" width="300" height="100" rx="6" fill="#FFF" stroke="#BF360C" stroke-width="2" filter="url(#shadow)"/>
+  <text x="205" y="708" text-anchor="middle" fill="#BF360C" font-size="12" font-weight="bold">⭐ SpatioTemporalVoxelLayer</text>
+  <text x="205" y="724" text-anchor="middle" fill="#555" font-size="9">时空体素层 (3D点云 → 2D代价)</text>
+  <line x1="70" y1="733" x2="340" y2="733" stroke="#EEE" stroke-width="1"/>
+  <text x="90" y="750" fill="#555" font-size="9">输入: /livox/lidar (PointCloud2)</text>
+  <text x="90" y="766" fill="#555" font-size="9">voxel_size=0.05 | voxel_decay=15s(local)/60s(global)</text>
+  <text x="90" y="782" fill="#555" font-size="9">min_h=0.1m | max_h=2.0m | obstacle_range=8m</text>
+
+  <!-- 箭头 STVL→local -->
+  <line x1="355" y1="730" x2="390" y2="730" stroke="#BF360C" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <!-- 箭头 STVL→global -->
+  <line x1="205" y1="788" x2="205" y2="815" stroke="#BF360C" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+
+  <!-- local_costmap -->
+  <rect x="395" y="688" width="170" height="70" rx="6" fill="#FFF" stroke="#D84315" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="480" y="710" text-anchor="middle" fill="#D84315" font-size="11" font-weight="bold">local_costmap</text>
+  <text x="480" y="726" text-anchor="middle" fill="#555" font-size="8">3×3m 滚动窗口</text>
+  <text x="480" y="740" text-anchor="middle" fill="#555" font-size="8">分辨率 0.05m</text>
+  <text x="480" y="754" text-anchor="middle" fill="#555" font-size="8">frame: odom</text>
+
+  <!-- global_costmap -->
+  <rect x="585" y="688" width="160" height="70" rx="6" fill="#FFF" stroke="#D84315" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="665" y="710" text-anchor="middle" fill="#D84315" font-size="11" font-weight="bold">global_costmap</text>
+  <text x="665" y="726" text-anchor="middle" fill="#555" font-size="8">20×20m 滚动窗口</text>
+  <text x="665" y="740" text-anchor="middle" fill="#555" font-size="8">分辨率 0.05m</text>
+  <text x="665" y="754" text-anchor="middle" fill="#555" font-size="8">frame: map</text>
+
+  <!-- 膨胀层标注 -->
+  <rect x="395" y="765" width="350" height="40" rx="4" fill="#FBE9E7" stroke="#FFAB91" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <text x="570" y="783" text-anchor="middle" fill="#BF360C" font-size="9">+ InflationLayer: cost_scaling=3.0, radius=0.55m, robot_radius=0.22m</text>
+  <text x="570" y="797" text-anchor="middle" fill="#888" font-size="8">update: local=5Hz global=1Hz | always_send_full_costmap: True</text>
+
+  <!-- ==================================================================================== -->
+  <!-- 仿真侧：第3层 —— 代价地图层 (标准2D) -->
+  <!-- ==================================================================================== -->
+  <rect x="830" y="645" width="740" height="210" rx="8" fill="url(#simCost)" stroke="#1565C0" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="830" y="645" width="740" height="32" rx="8" fill="#1565C0"/>
+  <rect x="830" y="661" width="740" height="16" fill="#1565C0"/>
+  <text x="1200" y="666" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">🗺️ 代价地图层 — 标准 2D 代价地图 (仿真专属)</text>
+
+  <!-- VoxelLayer -->
+  <rect x="855" y="688" width="160" height="100" rx="6" fill="#FFF" stroke="#0D47A1" stroke-width="2" filter="url(#shadowLight)"/>
+  <text x="935" y="708" text-anchor="middle" fill="#0D47A1" font-size="11" font-weight="bold">VoxelLayer</text>
+  <text x="935" y="724" text-anchor="middle" fill="#555" font-size="9">3D体素→2D投影</text>
+  <text x="935" y="742" text-anchor="middle" fill="#555" font-size="9">z_voxels=16</text>
+  <text x="935" y="758" text-anchor="middle" fill="#555" font-size="9">max_h=2.0m</text>
+  <text x="935" y="774" text-anchor="middle" fill="#555" font-size="9">← /scan (LaserScan)</text>
+
+  <!-- ObstacleLayer -->
+  <rect x="1035" y="688" width="160" height="100" rx="6" fill="#FFF" stroke="#0D47A1" stroke-width="2" filter="url(#shadowLight)"/>
+  <text x="1115" y="708" text-anchor="middle" fill="#0D47A1" font-size="11" font-weight="bold">ObstacleLayer</text>
+  <text x="1115" y="724" text-anchor="middle" fill="#555" font-size="9">2D 障碍物层</text>
+  <text x="1115" y="742" text-anchor="middle" fill="#555" font-size="9">obstacle_range=2.5m</text>
+  <text x="1115" y="758" text-anchor="middle" fill="#555" font-size="9">raytrace_range=3.0m</text>
+  <text x="1115" y="774" text-anchor="middle" fill="#555" font-size="9">← /scan (LaserScan)</text>
+
+  <!-- StaticLayer -->
+  <rect x="1215" y="688" width="150" height="70" rx="6" fill="#E8EAF6" stroke="#7986CB" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="1290" y="710" text-anchor="middle" fill="#283593" font-size="11" font-weight="bold">StaticLayer</text>
+  <text x="1290" y="728" text-anchor="middle" fill="#555" font-size="9">预建地图层</text>
+  <text x="1290" y="746" text-anchor="middle" fill="#555" font-size="9">(map_server)</text>
+
+  <!-- 仿真 local/global -->
+  <rect x="855" y="798" width="170" height="48" rx="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+  <text x="940" y="816" text-anchor="middle" fill="#0D47A1" font-size="10" font-weight="bold">local_costmap</text>
+  <text x="940" y="832" text-anchor="middle" fill="#555" font-size="8">3×3m | rolling | odom | 0.05m</text>
+  <text x="940" y="844" text-anchor="middle" fill="#555" font-size="8">plugins: [voxel_layer, inflation]</text>
+
+  <rect x="1045" y="798" width="170" height="48" rx="5" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+  <text x="1130" y="816" text-anchor="middle" fill="#0D47A1" font-size="10" font-weight="bold">global_costmap</text>
+  <text x="1130" y="832" text-anchor="middle" fill="#555" font-size="8">20×20m | rolling | map | 0.05m</text>
+  <text x="1130" y="844" text-anchor="middle" fill="#555" font-size="8">plugins: [obstacle, static, inflation]</text>
+
+  <!-- 膨胀层标注 仿真 -->
+  <rect x="1235" y="773" width="310" height="35" rx="4" fill="#E8EAF6" stroke="#9FA8DA" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <text x="1390" y="790" text-anchor="middle" fill="#283593" font-size="9">+ InflationLayer: cost_scaling=3.0, radius=0.55m</text>
+  <text x="1390" y="803" text-anchor="middle" fill="#888" font-size="8">update: local=5Hz global=1Hz</text>
+
+  <!-- ========== 第3层→第4层 数据流箭头 ========== -->
+  <!-- 硬件侧 -->
+  <text x="470" y="880" fill="#BF360C" font-size="9">costmap</text>
+  <line x1="480" y1="875" x2="380" y2="900" stroke="#C62828" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <!-- 仿真侧 -->
+  <text x="930" y="880" fill="#1A237E" font-size="9">costmap</text>
+  <line x1="940" y1="875" x2="1080" y2="900" stroke="#0D47A1" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- ==================================================================================== -->
+  <!-- 硬件侧：第4层 —— 导航决策层 -->
+  <!-- ==================================================================================== -->
+  <rect x="30" y="905" width="740" height="240" rx="8" fill="url(#hwNav)" stroke="#AD1457" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="30" y="905" width="740" height="32" rx="8" fill="#AD1457"/>
+  <rect x="30" y="921" width="740" height="16" fill="#AD1457"/>
+  <text x="400" y="926" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">🧠 导航决策层 — Nav2 导航栈</text>
+
+  <!-- planner_server -->
+  <rect x="50" y="948" width="160" height="85" rx="6" fill="#FFF" stroke="#C62828" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="130" y="968" text-anchor="middle" fill="#C62828" font-size="11" font-weight="bold">planner_server</text>
+  <text x="130" y="984" text-anchor="middle" fill="#555" font-size="9">NavfnPlanner</text>
+  <text x="130" y="998" text-anchor="middle" fill="#555" font-size="8">use_astar: false</text>
+  <text x="130" y="1012" text-anchor="middle" fill="#555" font-size="8">tolerance: 0.5</text>
+  <text x="130" y="1026" text-anchor="middle" fill="#555" font-size="8">→ /plan (Path)</text>
+
+  <!-- controller_server -->
+  <rect x="230" y="948" width="170" height="85" rx="6" fill="#FFF" stroke="#C62828" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="315" y="968" text-anchor="middle" fill="#C62828" font-size="11" font-weight="bold">controller_server</text>
+  <text x="315" y="984" text-anchor="middle" fill="#555" font-size="9">DWB Local Planner</text>
+  <text x="315" y="998" text-anchor="middle" fill="#555" font-size="8">max_vel_x: 0.26 m/s</text>
+  <text x="315" y="1012" text-anchor="middle" fill="#555" font-size="8">max_vel_θ: 1.0 rad/s</text>
+  <text x="315" y="1026" text-anchor="middle" fill="#555" font-size="8">acc_lim_x: 2.5 m/s²</text>
+
+  <!-- behavior_server -->
+  <rect x="420" y="948" width="155" height="85" rx="6" fill="#FFF" stroke="#C62828" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="498" y="968" text-anchor="middle" fill="#C62828" font-size="11" font-weight="bold">behavior_server</text>
+  <text x="498" y="984" text-anchor="middle" fill="#555" font-size="9">恢复行为:</text>
+  <text x="498" y="1000" text-anchor="middle" fill="#555" font-size="8">spin | backup</text>
+  <text x="498" y="1014" text-anchor="middle" fill="#555" font-size="8">drive_on_heading</text>
+  <text x="498" y="1028" text-anchor="middle" fill="#555" font-size="8">assisted_teleop | wait</text>
+
+  <!-- smoother + velocity -->
+  <rect x="595" y="948" width="150" height="85" rx="6" fill="#FFF" stroke="#C62828" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="670" y="968" text-anchor="middle" fill="#C62828" font-size="10" font-weight="bold">smoother_server</text>
+  <text x="670" y="984" text-anchor="middle" fill="#555" font-size="8">SimpleSmoother</text>
+  <text x="670" y="1000" text-anchor="middle" fill="#888" font-size="7">──</text>
+  <text x="670" y="1014" text-anchor="middle" fill="#C62828" font-size="10" font-weight="bold">velocity_smoother</text>
+  <text x="670" y="1028" text-anchor="middle" fill="#555" font-size="8">max: [0.26, 0, 1.0]</text>
+
+  <!-- BT Navigator -->
+  <rect x="50" y="1045" width="695" height="45" rx="5" fill="#FCE4EC" stroke="#F48FB1" stroke-width="1"/>
+  <text x="398" y="1063" text-anchor="middle" fill="#880E4F" font-size="11" font-weight="bold">bt_navigator — 行为树引擎 (loop=10Hz)</text>
+  <text x="398" y="1081" text-anchor="middle" fill="#555" font-size="9">NavigateToPose / NavigateThroughPoses → 编排 planner → controller → smoother → velocity_smoother 全流程</text>
+
+  <!-- 硬件 planner→controller 箭头 -->
+  <line x1="210" y1="985" x2="230" y2="985" stroke="#C62828" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="220" y="978" fill="#C62828" font-size="7">path</text>
+  <!-- controller→velocity -->
+  <line x1="400" y1="990" x2="595" y2="990" stroke="#C62828" stroke-width="2" marker-end="url(#arrowRed)"/>
+
+  <!-- ==================================================================================== -->
+  <!-- 仿真侧：第4层 —— 导航决策层 -->
+  <!-- ==================================================================================== -->
+  <rect x="830" y="905" width="740" height="240" rx="8" fill="url(#simNav)" stroke="#4527A0" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="830" y="905" width="740" height="32" rx="8" fill="#4527A0"/>
+  <rect x="830" y="921" width="740" height="16" fill="#4527A0"/>
+  <text x="1200" y="926" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">🧠 导航决策层 — Nav2 导航栈 (与硬件共用核心)</text>
+
+  <!-- planner_server 仿真 -->
+  <rect x="850" y="948" width="160" height="85" rx="6" fill="#FFF" stroke="#4527A0" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="930" y="968" text-anchor="middle" fill="#4527A0" font-size="11" font-weight="bold">planner_server</text>
+  <text x="930" y="984" text-anchor="middle" fill="#555" font-size="9">NavfnPlanner</text>
+  <text x="930" y="998" text-anchor="middle" fill="#555" font-size="8">use_astar: false</text>
+  <text x="930" y="1012" text-anchor="middle" fill="#555" font-size="8">tolerance: 0.5</text>
+  <text x="930" y="1026" text-anchor="middle" fill="#555" font-size="8">→ /plan (Path)</text>
+
+  <!-- controller_server 仿真 -->
+  <rect x="1030" y="948" width="170" height="85" rx="6" fill="#FFF" stroke="#4527A0" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="1115" y="968" text-anchor="middle" fill="#4527A0" font-size="11" font-weight="bold">controller_server</text>
+  <text x="1115" y="984" text-anchor="middle" fill="#555" font-size="9">DWB Local Planner</text>
+  <text x="1115" y="998" text-anchor="middle" fill="#555" font-size="8">max_vel_x: 0.26 m/s</text>
+  <text x="1115" y="1012" text-anchor="middle" fill="#555" font-size="8">max_vel_θ: 1.0 rad/s</text>
+  <text x="1115" y="1026" text-anchor="middle" fill="#555" font-size="8">acc_lim_x: 2.5 m/s²</text>
+
+  <!-- behavior + 其他 仿真 -->
+  <rect x="1220" y="948" width="155" height="85" rx="6" fill="#FFF" stroke="#4527A0" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="1298" y="968" text-anchor="middle" fill="#4527A0" font-size="11" font-weight="bold">behavior_server</text>
+  <text x="1298" y="984" text-anchor="middle" fill="#555" font-size="9">spin | backup</text>
+  <text x="1298" y="998" text-anchor="middle" fill="#555" font-size="9">drive_on_heading</text>
+  <text x="1298" y="1012" text-anchor="middle" fill="#555" font-size="9">assisted_teleop</text>
+  <text x="1298" y="1026" text-anchor="middle" fill="#555" font-size="9">wait</text>
+
+  <!-- smoother + velocity 仿真 -->
+  <rect x="1395" y="948" width="150" height="85" rx="6" fill="#FFF" stroke="#4527A0" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <text x="1470" y="968" text-anchor="middle" fill="#4527A0" font-size="10" font-weight="bold">smoother</text>
+  <text x="1470" y="984" text-anchor="middle" fill="#555" font-size="8">SimpleSmoother</text>
+  <text x="1470" y="1000" text-anchor="middle" fill="#888" font-size="7">──</text>
+  <text x="1470" y="1014" text-anchor="middle" fill="#4527A0" font-size="10" font-weight="bold">velocity_smoother</text>
+  <text x="1470" y="1028" text-anchor="middle" fill="#555" font-size="8">max: [0.26, 0, 1.0]</text>
+
+  <!-- BT Navigator 仿真 -->
+  <rect x="850" y="1045" width="695" height="45" rx="5" fill="#EDE7F6" stroke="#B39DDB" stroke-width="1"/>
+  <text x="1198" y="1063" text-anchor="middle" fill="#311B92" font-size="11" font-weight="bold">bt_navigator — 行为树引擎 (loop=10Hz)</text>
+  <text x="1198" y="1081" text-anchor="middle" fill="#555" font-size="9">NavigateToPose / NavigateThroughPoses → 编排 planner → controller → smoother 全流程</text>
+
+  <!-- 仿真 planner→controller -->
+  <line x1="1010" y1="985" x2="1030" y2="985" stroke="#4527A0" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <text x="1020" y="978" fill="#4527A0" font-size="7">path</text>
+
+  <!-- ========== 第4层→第5层 数据流箭头 ========== -->
+  <!-- 硬件侧 -->
+  <line x1="400" y1="1145" x2="350" y2="1175" stroke="#00695C" stroke-width="3" marker-end="url(#arrowTeal)"/>
+  <text x="360" y="1168" fill="#00695C" font-size="10" font-weight="bold">/cmd_vel</text>
+  <!-- 仿真侧 -->
+  <line x1="1200" y1="1145" x2="1150" y2="1175" stroke="#00695C" stroke-width="3" marker-end="url(#arrowTeal)"/>
+  <text x="1160" y="1168" fill="#00695C" font-size="10" font-weight="bold">/cmd_vel</text>
+
+  <!-- ==================================================================================== -->
+  <!-- 硬件侧：第5层 —— 控制输出 -->
+  <!-- ==================================================================================== -->
+  <rect x="30" y="1180" width="740" height="85" rx="8" fill="url(#hwCtrl)" stroke="#00695C" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="30" y="1180" width="740" height="32" rx="8" fill="#00695C"/>
+  <rect x="30" y="1196" width="740" height="16" fill="#00695C"/>
+  <text x="400" y="1201" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">⚡ 控制输出层 — 底盘执行</text>
+  <rect x="280" y="1222" width="240" height="34" rx="17" fill="#FFF" stroke="#00695C" stroke-width="2" filter="url(#shadow)"/>
+  <text x="400" y="1244" text-anchor="middle" fill="#00695C" font-size="15" font-weight="bold">/cmd_vel → 底盘电机</text>
+
+  <!-- ==================================================================================== -->
+  <!-- 仿真侧：第5层 —— 控制输出 -->
+  <!-- ==================================================================================== -->
+  <rect x="830" y="1180" width="740" height="85" rx="8" fill="url(#simCtrl)" stroke="#00695C" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="830" y="1180" width="740" height="32" rx="8" fill="#00695C"/>
+  <rect x="830" y="1196" width="740" height="16" fill="#00695C"/>
+  <text x="1200" y="1201" text-anchor="middle" fill="#FFF" font-size="14" font-weight="bold">⚡ 控制输出层 — Gazebo 物理引擎</text>
+  <rect x="1080" y="1222" width="240" height="34" rx="17" fill="#FFF" stroke="#00695C" stroke-width="2" filter="url(#shadow)"/>
+  <text x="1200" y="1244" text-anchor="middle" fill="#00695C" font-size="15" font-weight="bold">/cmd_vel → DiffDrive 插件</text>
+
+  <!-- ==================================================================================== -->
+  <!-- ========== TF 坐标变换树对比 ========== -->
+  <!-- ==================================================================================== -->
+  <rect x="30" y="1290" width="740" height="170" rx="8" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="30" y="1290" width="740" height="30" rx="8" fill="#7B1FA2"/>
+  <rect x="30" y="1306" width="740" height="14" fill="#7B1FA2"/>
+  <text x="400" y="1311" text-anchor="middle" fill="#FFF" font-size="13" font-weight="bold">🌳 TF 坐标变换树 — 硬件</text>
+
+  <!-- 硬件 TF 图 -->
+  <rect x="120" y="1335" width="70" height="30" rx="15" fill="#6A1B9A" filter="url(#shadowLight)"/>
+  <text x="155" y="1355" text-anchor="middle" fill="#FFF" font-size="11" font-weight="bold">map</text>
+  <line x1="190" y1="1350" x2="240" y2="1350" stroke="#6A1B9A" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+  <text x="215" y="1342" fill="#6A1B9A" font-size="8">EKF发布</text>
+  <rect x="245" y="1335" width="70" height="30" rx="15" fill="#AB47BC" filter="url(#shadowLight)"/>
+  <text x="280" y="1355" text-anchor="middle" fill="#FFF" font-size="11" font-weight="bold">odom</text>
+  <line x1="315" y1="1350" x2="365" y2="1350" stroke="#6A1B9A" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+  <text x="340" y="1342" fill="#6A1B9A" font-size="8">EKF发布</text>
+  <rect x="370" y="1335" width="100" height="30" rx="15" fill="#CE93D8" filter="url(#shadowLight)"/>
+  <text x="420" y="1355" text-anchor="middle" fill="#4A148C" font-size="11" font-weight="bold">base_footprint</text>
+
+  <!-- 硬件额外 TF -->
+  <rect x="290" y="1385" width="180" height="55" rx="6" fill="#F3E5F5" stroke="#CE93D8" stroke-width="1.5"/>
+  <text x="380" y="1402" text-anchor="middle" fill="#6A1B9A" font-size="10">base_link → livox_frame</text>
+  <text x="380" y="1418" text-anchor="middle" fill="#555" font-size="9">静态TF: x=0.14, z=0.12</text>
+  <text x="380" y="1434" text-anchor="middle" fill="#888" font-size="8">tf2_ros static_transform_publisher</text>
+  <line x1="420" y1="1365" x2="380" y2="1385" stroke="#CE93D8" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- 仿真 TF 树 -->
+  <rect x="830" y="1290" width="740" height="170" rx="8" fill="#EDE7F6" stroke="#7B1FA2" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="830" y="1290" width="740" height="30" rx="8" fill="#7B1FA2"/>
+  <rect x="830" y="1306" width="740" height="14" fill="#7B1FA2"/>
+  <text x="1200" y="1311" text-anchor="middle" fill="#FFF" font-size="13" font-weight="bold">🌳 TF 坐标变换树 — 仿真</text>
+
+  <rect x="920" y="1335" width="70" height="30" rx="15" fill="#6A1B9A" filter="url(#shadowLight)"/>
+  <text x="955" y="1355" text-anchor="middle" fill="#FFF" font-size="11" font-weight="bold">map</text>
+  <line x1="990" y1="1350" x2="1040" y2="1350" stroke="#6A1B9A" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+  <rect x="1045" y="1335" width="70" height="30" rx="15" fill="#AB47BC" filter="url(#shadowLight)"/>
+  <text x="1080" y="1355" text-anchor="middle" fill="#FFF" font-size="11" font-weight="bold">odom</text>
+  <line x1="1115" y1="1350" x2="1165" y2="1350" stroke="#6A1B9A" stroke-width="2.5" marker-end="url(#arrowPurple)"/>
+  <rect x="1170" y="1335" width="100" height="30" rx="15" fill="#CE93D8" filter="url(#shadowLight)"/>
+  <text x="1220" y="1355" text-anchor="middle" fill="#4A148C" font-size="11" font-weight="bold">base_footprint</text>
+
+  <rect x="1060" y="1385" width="240" height="55" rx="6" fill="#EDE7F6" stroke="#B39DDB" stroke-width="1.5"/>
+  <text x="1180" y="1402" text-anchor="middle" fill="#6A1B9A" font-size="10">robot_state_publisher</text>
+  <text x="1180" y="1418" text-anchor="middle" fill="#555" font-size="9">从 URDF 发布 base_link 子关节</text>
+  <text x="1180" y="1434" text-anchor="middle" fill="#888" font-size="8">(wheel_left, wheel_right, imu_link 等)</text>
+  <line x1="1220" y1="1365" x2="1180" y2="1385" stroke="#CE93D8" stroke-width="1.5" stroke-dasharray="5,3"/>
+
+  <!-- ==================================================================================== -->
+  <!-- ========== 硬件启动时序 ========== -->
+  <!-- ==================================================================================== -->
+  <rect x="30" y="1480" width="740" height="120" rx="8" fill="#ECEFF1" stroke="#78909C" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="30" y="1480" width="740" height="30" rx="8" fill="#546E7A"/>
+  <rect x="30" y="1496" width="740" height="14" fill="#546E7A"/>
+  <text x="400" y="1501" text-anchor="middle" fill="#FFF" font-size="13" font-weight="bold">⏱️ bringup.launch.py 硬件启动时序 (延迟启动策略)</text>
+
+  <!-- 时间轴箭头 -->
+  <line x1="60" y1="1555" x2="740" y2="1555" stroke="#90A4AE" stroke-width="2" marker-end="url(#arrowGray)"/>
+  <text x="755" y="1559" fill="#546E7A" font-size="10" font-weight="bold">时间 →</text>
+
+  <!-- 时间轴节点 -->
+  <rect x="60" y="1525" width="100" height="25" rx="12" fill="#546E7A"/>
+  <text x="110" y="1542" text-anchor="middle" fill="#FFF" font-size="9" font-weight="bold">t=0s 底盘</text>
+
+  <rect x="180" y="1525" width="110" height="25" rx="12" fill="#FF9800"/>
+  <text x="235" y="1542" text-anchor="middle" fill="#FFF" font-size="9" font-weight="bold">t=2s LiDAR+RTK</text>
+
+  <rect x="315" y="1525" width="100" height="25" rx="12" fill="#F57C00"/>
+  <text x="365" y="1542" text-anchor="middle" fill="#FFF" font-size="9" font-weight="bold">t=5s EKF</text>
+
+  <rect x="440" y="1525" width="130" height="25" rx="12" fill="#D84315"/>
+  <text x="505" y="1542" text-anchor="middle" fill="#FFF" font-size="9" font-weight="bold">t=8s navsat_transform</text>
+
+  <rect x="600" y="1525" width="120" height="25" rx="12" fill="#AD1457"/>
+  <text x="660" y="1542" text-anchor="middle" fill="#FFF" font-size="9" font-weight="bold">t=10s Nav2</text>
+
+  <!-- 时间轴刻度 -->
+  <line x1="60" y1="1550" x2="60" y2="1560" stroke="#546E7A" stroke-width="1.5"/>
+  <line x1="180" y1="1550" x2="180" y2="1560" stroke="#546E7A" stroke-width="1.5"/>
+  <line x1="315" y1="1550" x2="315" y2="1560" stroke="#546E7A" stroke-width="1.5"/>
+  <line x1="440" y1="1550" x2="440" y2="1560" stroke="#546E7A" stroke-width="1.5"/>
+  <line x1="600" y1="1550" x2="600" y2="1560" stroke="#546E7A" stroke-width="1.5"/>
+
+  <text x="60" y="1572" fill="#78909C" font-size="8">0s</text>
+  <text x="175" y="1572" fill="#78909C" font-size="8">2s</text>
+  <text x="310" y="1572" fill="#78909C" font-size="8">5s</text>
+  <text x="435" y="1572" fill="#78909C" font-size="8">8s</text>
+  <text x="595" y="1572" fill="#78909C" font-size="8">10s</text>
+
+  <text x="400" y="1592" text-anchor="middle" fill="#78909C" font-size="9">注: 延迟启动确保传感器驱动完全就绪后, 定位和导航节点才开始工作</text>
+
+  <!-- ==================================================================================== -->
+  <!-- ========== 关键差异对比表 ========== -->
+  <!-- ==================================================================================== -->
+  <rect x="30" y="1620" width="1540" height="170" rx="8" fill="#FFF" stroke="#CFD8DC" stroke-width="1.5" filter="url(#shadowLight)"/>
+  <rect x="30" y="1620" width="1540" height="32" rx="8" fill="#37474F"/>
+  <rect x="30" y="1638" width="1540" height="14" fill="#37474F"/>
+  <text x="800" y="1642" text-anchor="middle" fill="#FFB74D" font-size="14" font-weight="bold">📊 硬件 vs 仿真 — 关键差异速查表</text>
+
+  <!-- 表头 -->
+  <rect x="50" y="1662" width="180" height="26" rx="4" fill="#ECEFF1"/>
+  <text x="140" y="1680" text-anchor="middle" fill="#37474F" font-size="11" font-weight="bold">对比维度</text>
+  <rect x="235" y="1662" width="610" height="26" rx="4" fill="#FFF3E0"/>
+  <text x="540" y="1680" text-anchor="middle" fill="#E65100" font-size="11" font-weight="bold">硬件分支 (hardware)</text>
+  <rect x="850" y="1662" width="610" height="26" rx="4" fill="#E3F2FD"/>
+  <text x="1155" y="1680" text-anchor="middle" fill="#0D47A1" font-size="11" font-weight="bold">仿真分支 (simulation)</text>
+
+  <!-- 行1 -->
+  <text x="60" y="1706" fill="#37474F" font-size="10" font-weight="bold">LiDAR 类型</text>
+  <text x="245" y="1706" fill="#555" font-size="10">Livox Mid-360 (3D 半球, 半球 FOV)</text>
+  <text x="860" y="1706" fill="#555" font-size="10">Gazebo LIDAR (2D 平面扫描, 3.5m range)</text>
+
+  <!-- 行2 -->
+  <text x="60" y="1726" fill="#37474F" font-size="10" font-weight="bold">LiDAR 话题</text>
+  <text x="245" y="1726" fill="#555" font-size="10">/livox/lidar (PointCloud2, 10Hz)</text>
+  <text x="860" y="1726" fill="#555" font-size="10">/scan (LaserScan, 5Hz)</text>
+
+  <!-- 行3 -->
+  <text x="60" y="1746" fill="#37474F" font-size="10" font-weight="bold">代价地图层</text>
+  <text x="245" y="1746" fill="#555" font-size="10">SpatioTemporalVoxelLayer (3D时空体素) + InflationLayer</text>
+  <text x="860" y="1746" fill="#555" font-size="10">VoxelLayer + ObstacleLayer + StaticLayer + InflationLayer</text>
+
+  <!-- 行4 -->
+  <text x="60" y="1766" fill="#37474F" font-size="10" font-weight="bold">AMCL 定位</text>
+  <text x="245" y="1766" fill="#555" font-size="10">✅ 启用 (500-2000 粒子, likelihood_field)</text>
+  <text x="860" y="1766" fill="#555" font-size="10">✅ 启用 (相同配置)</text>
+
+  <!-- 行5 -->
+  <text x="60" y="1784" fill="#37474F" font-size="10" font-weight="bold">use_sim_time</text>
+  <text x="245" y="1784" fill="#555" font-size="10">false (系统时钟)</text>
+  <text x="860" y="1784" fill="#555" font-size="10">true (仿真时钟 /clock)</text>
+
+  <!-- ==================================================================================== -->
+  <!-- ========== 图例 ========== -->
+  <!-- ==================================================================================== -->
+  <rect x="30" y="1810" width="1540" height="65" rx="8" fill="#FAFAFA" stroke="#CFD8DC" stroke-width="1"/>
+  <text x="60" y="1832" fill="#37474F" font-size="11" font-weight="bold">🎨 图例:</text>
+
+  <rect x="120" y="1820" width="16" height="16" rx="3" fill="#FF9800"/>
+  <text x="142" y="1834" fill="#555" font-size="10">硬件传感器/定位</text>
+
+  <rect x="260" y="1820" width="16" height="16" rx="3" fill="#D84315"/>
+  <text x="282" y="1834" fill="#555" font-size="10">硬件代价地图</text>
+
+  <rect x="380" y="1820" width="16" height="16" rx="3" fill="#C62828"/>
+  <text x="402" y="1834" fill="#555" font-size="10">硬件导航</text>
+
+  <rect x="480" y="1820" width="16" height="16" rx="3" fill="#1976D2"/>
+  <text x="502" y="1834" fill="#555" font-size="10">仿真传感器/定位</text>
+
+  <rect x="620" y="1820" width="16" height="16" rx="3" fill="#4527A0"/>
+  <text x="642" y="1834" fill="#555" font-size="10">仿真导航</text>
+
+  <rect x="740" y="1820" width="16" height="16" rx="3" fill="#00695C"/>
+  <text x="762" y="1834" fill="#555" font-size="10">控制输出</text>
+
+  <rect x="860" y="1820" width="16" height="16" rx="3" fill="#6A1B9A"/>
+  <text x="882" y="1834" fill="#555" font-size="10">TF坐标变换</text>
+
+  <rect x="1000" y="1820" width="16" height="16" rx="3" fill="#ECEFF1"/>
+  <text x="1022" y="1834" fill="#555" font-size="10">时序/元数据</text>
+
+  <text x="60" y="1862" fill="#999" font-size="9">所有话题名称均为实际代码中的真实值 · 参数取自主配置文件的当前版本 · 箭头方向代表数据流向</text>
+
+  <!-- ========== 底部 ========== -->
+  <text x="800" y="1900" text-anchor="middle" fill="#BDBDBD" font-size="10">carplanning_code v0.1.0 · ROS2 Humble · Jetson Xavier NX · Generated 2026-06-17</text>
+
+  <!-- ==================================================================================== -->
+  <!-- AMCL 补充 (硬件侧) -->
+  <!-- ==================================================================================== -->
+  <rect x="55" y="1095" width="690" height="40" rx="5" fill="#FFF8E1" stroke="#FFCC80" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="70" y="1112" fill="#E65100" font-size="9" font-weight="bold">🔍 AMCL (自适应蒙特卡洛定位):</text>
+  <text x="70" y="1127" fill="#555" font-size="9">scan_topic: scan | laser_model: likelihood_field | 500-2000 particles | 发布 map→odom TF</text>
+
+  <!-- AMCL 补充 (仿真侧) -->
+  <rect x="855" y="1095" width="690" height="40" rx="5" fill="#E8EAF6" stroke="#9FA8DA" stroke-width="0.8" stroke-dasharray="4,3"/>
+  <text x="870" y="1112" fill="#0D47A1" font-size="9" font-weight="bold">🔍 AMCL (自适应蒙特卡洛定位):</text>
+  <text x="870" y="1127" fill="#555" font-size="9">scan_topic: scan | laser_model: likelihood_field | 500-2000 particles | 发布 map→odom TF</text>
+
+</svg>
