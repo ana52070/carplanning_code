@@ -1,1 +1,0 @@
-/home/ubuntu/ros2_ws/workspace/carplanning_code/src/launch/ekf_diagnostic.launch.py

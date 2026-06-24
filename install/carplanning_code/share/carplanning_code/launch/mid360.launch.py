@@ -1,1 +1,0 @@
-/home/ubuntu/ros2_ws/workspace/carplanning_code/src/launch/mid360.launch.py

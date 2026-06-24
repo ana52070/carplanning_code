@@ -7,7 +7,10 @@
       "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/config/nav2_params.yaml'\\)\\); print\\('nav2_params.yaml OK'\\)\")",
       "Bash(python3 -c \"import ast; ast.parse\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/scripts/ekf_probe.py'\\).read\\(\\)\\); print\\('ekf_probe.py OK'\\)\")",
       "Bash(python3 -c \"import ast; ast.parse\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/scripts/covariance_relay.py'\\).read\\(\\)\\); print\\('covariance_relay.py OK'\\)\")",
-      "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/config/navsat.yaml'\\)\\); print\\('navsat.yaml OK'\\)\")"
+      "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('/home/iot/ros2_ws/workspace/carplanning_code/src/config/navsat.yaml'\\)\\); print\\('navsat.yaml OK'\\)\")",
+      "Read(//ros2_ws/workspace/**)",
+      "Bash(find /ros2_ws -maxdepth 4 -name \"fastlio2\" -type d)",
+      "Read(//home/ubuntu/fastlio2_ws/**)"
     ]
   }
 }

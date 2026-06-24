@@ -1,1 +1,0 @@
-/home/ubuntu/ros2_ws/workspace/carplanning_code/src/scripts/livox_to_pc2.py
