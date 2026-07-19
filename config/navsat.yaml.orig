@@ -38,12 +38,11 @@ navsat_transform:
     publish_filtered_gps: false
 
     # ╔══════════════════════════════════════════════════════════════╗
-    # ║  🔧 use_odometry_yaw: true → false                         ║
-    # ║  原因: UM982 双天线可提供绝对航向, 给 EKF 做航向参考       ║
-    # ║  之前用 true 导致 /odometry/gps 方向=EKF 自己死推算的 yaw  ║
-    # ║  → EKF yaw 没有绝对参考 → 代价地图旋转 → 螺旋畸变          ║
+    # ║  🔧 use_odometry_yaw: false → true                         ║
+    # ║  原因: 设为 true 时, navsat 使用 EKF 的偏航角而非 GPS 航向 ║
+    # ║  这对于低速/静止场景更稳定 (GPS 航向在低速时不准)         ║
     # ╚══════════════════════════════════════════════════════════════╝
-    use_odometry_yaw: false
+    use_odometry_yaw: true
 
     # 不等待基准点 (让 navsat 自己确定原点)
     wait_for_datum: false
